@@ -76,6 +76,83 @@
 
 
 
+#### 前后端 API 设计
+
+基于 Ajax、JSON 的数据请求和解析
+
+使用 Servlet 处理 HTTP 请求，实现博客的 CURD
+
+
+
+新增博客
+
+```
+POST /blog
+
+{
+	“title”：“xxxx”,
+	“content”：“xxxx”,
+	“create——time”：“xx”
+}
+
+HTTP/1.1 200 OK
+
+{
+	ok：true,
+	reason：xxxx
+}
+```
+
+获取博客列表
+
+```
+查看所有博客(标题列表)
+
+使用 GET 方法查看
+
+GET /blog      		// 获取所有的
+
+HTTP/1.1 200 OK
+[
+	{
+		article_id:1,
+		title：xxx
+		create——time：xxxxx
+	}
+]
+```
+
+修改博客
+
+```
+PUT /blog
+
+{
+	title：xxxx
+	content：xxxx
+}
+
+HTTP/1.1 200 OK
+{
+	ok：true
+}
+```
+
+删除博客
+
+```
+DELETE /blog
+
+HTTP/1.1 200 OK
+{
+	ok：true
+}
+```
+
+
+
+### 编码阶段
+
 #### 数据库操作
 
 ###### 创建数据库对应实体类
@@ -91,23 +168,27 @@
 
 
 
-#### 前后端 API 设计
+##### 服务器端
+
+
+
+##### 客户端
 
 
 
 
 
+#### 小结
 
 
 
+存在问题：
 
-
-
-
-
-
-
-
++ 博客列表显示是直接加载所有博客和标题，只是选择性希纳是如果博客数量增多会导致进入页面加载慢
++ 实现一个图床服务器存放图片
++ 支持多用户（对数据库的表结果重新设计）cookie session
++ 实现分页分类展示
++ 搜素博客功能（数据库：Like 复杂的话：倒排索引？）
 
 
 
