@@ -1,12 +1,15 @@
-drop database if exists blogdemo;
-create database blogdemo default charset utf8mb4;
+drop database if exists servletblog;
+create database servletblog default charset utf8mb4;
 
-use blogdemo;
+use servletblog;
+
+
+
 drop table IF EXISTS user;
 create table user(
-                     id int primary key auto_increment,
-                     name varchar(20),
-                     create_time timestamp
+    id int primary key auto_increment,
+    name varchar(20),
+    create_time timestamp
 );
 
 drop table IF EXISTS article;

@@ -1,13 +1,13 @@
-package Jokseia.util;
+package Irena.util;
 
-import Jokseia.uti.DBUtil;
+import Irena.uti.DBUtil;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class DBUtilTest {
 
     @Test
-    public void testConnection() {
+    public void testConnection(){
         Assert.assertNotNull(DBUtil.getConnection());
     }
 }
