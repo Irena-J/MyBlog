@@ -20,7 +20,7 @@
 
 基于 MVC 设计模式实现的网页版的简单博客系统，只支持单个用户对文章的 CURD
 
-![image-20200825202053383](D:/typora/appdata/image-20200825202053383.png)
+![image-20200825202053383](img/image-20200825202053383.png)
 
 网页端显示页面：
 
@@ -52,7 +52,7 @@
 
 ###### 创建数据库
 
-![image-20200825224202639](D:/typora/appdata/image-20200825224202639.png)
+![image-20200825224202639](img/image-20200825224202639.png)
 
 ###### 设计用户表
 
@@ -62,7 +62,7 @@
 
 + create_time
 
-![image-20200825224231462](D:/typora/appdata/image-20200825224231462.png) 
+![image-20200825224231462](img/image-20200825224231462.png) 
 
 ###### 设计文章表
 
@@ -72,7 +72,7 @@
 + user_id                foreign key
 + create_time
 
-![image-20200825224411681](D:/typora/appdata/image-20200825224411681.png)
+![image-20200825224411681](img/image-20200825224411681.png)
 
 
 
@@ -280,17 +280,17 @@ public class ArticleDAOTest {
 
 请求
 
-![image-20200902090620563](D:/typora/appdata/image-20200902090620563.png)
+![image-20200902090620563](img/image-20200902090620563.png)
 
 响应
 
-![image-20200902090658008](D:/typora/appdata/image-20200902090658008.png)
+![image-20200902090658008](img/image-20200902090658008.png)
 
 
 
 获取现有博客信息
 
-![image-20200902094029979](D:/typora/appdata/image-20200902094029979.png)
+![image-20200902094029979](img/image-20200902094029979.png)
 
 
 

@@ -60,7 +60,7 @@
 
 
 
-![yuque_diagram](D:/typora/appdata/yuque_diagram-1599052309131.jpg)
+![yuque_diagram](img/yuque_diagram-1599052309131.jpg)
 
 自动化脚本：
 
